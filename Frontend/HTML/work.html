@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>MY BOOKMARKS-DEEPANSHU</title>
+    <style> 
+
+   h1{background: black; color: aliceblue;}
+    </style>
+               <!-- <link rel="stylesheet" href="style.css">    (this is external css adding)-->
+
+</head>
+<body>
+<h1>MY BOOKMARKS</h1>
+<h2>PRIMAR BOOKMARKS</h2>
+<p>
+ <a href="www.google.com">google</a>
+</p>
+<p>
+ <a href="www.youtube.com">youtube</a>
+</p>
+<p>
+    <a href="https://chatgpt.com/">chatgpt</a>
+</p>
+<p>
+ <a href="https://www.flipkart.com/?affid=affveve&affExtParam1=9acf6cad28789720d267c017494f429a&affExtParam2=60827">flipkark</a>   
+</p>
+
+
+
+
+
+<!--   lecture-2  (IMAGES , TABLES , LIST )  --> <P></P>
+
+
+
+<h1>BACK</h1>
+<img   height="230" src="im2.png" alt="porshe"> <img height="230" src="img1.png" alt="porshe"> 
+<p> </p> <!--for new line-->
+
+
+<h1>SIDE</h1>
+<img height="230" src="img3.png" alt="porshe">
+
+<h1>FRONT</h1>
+<img height="230"  src="img4.png" alt="">
+
+<!-- newline for table --> <P></P> 
+
+
+<caption>BASIC TABLE </caption>
+<table border="" >
+    <th>NAME</th>
+    <th>PLACE</th>
+    <th>FAV LANGUAGE</th>
+        <tr>
+            <td>DEEPANSHU</td>
+            <td>AGRA</td>
+            <td>PYTHON</td>
+        </tr>
+
+        <tr>
+            <td>HARSH</td>
+            <td>ALIGARH</td>
+            <td>CSS</td>
+        </tr>
+
+        <tr>
+            <td>NAITIK</td>
+            <td>AGRA</td>
+            <td>C</td>
+        </tr>
+
+</table>
+<!-- 
+emmet abbrevation -
+table>(tr>td*3)*3   
+ -->
+
+
+<P></P>
+
+
+<h1>UNORDERED LIST</h1>
+<h3>TEAM MEMBERS</h3>
+<ul>
+    <li>DEEPANSHU</li>
+    <li>HARSH</li>
+    <li>NAITIK</li>
+</ul>
+<!-- 
+#shortcut 
+        ul>li*3  
+-->
+
+
+<ul type="square">
+    <li>DEEPANSHU</li>
+    <li>HARSH</li>
+    <li>NAITIK</li>
+</ul>
+
+<h1>ORDERED LIST </h1>
+<h3>TEAM MEMBERS</h3>
+
+<!--   for numbered list  -->
+<OL type="1">
+    <li >DEEPANSHU</li>
+    <li>HARSH</li>
+    <li>NAITIK</li>
+
+</OL> <!-- 
+#shortcut
+        ol>li*3 
+-->
+
+
+
+
+<!--  for capital alphabet list  -->
+<OL type="A">
+    <li>DEEPANSHU</li>
+    <li>HARSH</li>
+    <li>NAITIK</li>
+
+</OL>
+
+
+<!--  for lowercase alphabet list  -->
+<OL type="a">
+    <li>DEEPANSHU</li>
+    <li>HARSH</li>
+    <li>NAITIK</li>
+
+</OL>
+
+
+<!--   roman number list of capital -->
+<OL type="I">
+    <li>DEEPANSHU</li>
+    <li>HARSH</li>
+    <li>NAITIK</li>
+
+</OL>
+
+<OL type="i">
+    <li>DEEPANSHU</li>
+    <li>HARSH</li>
+    <li>NAITIK</li>
+
+</OL> <!-- 
+#shortcut
+        ol>li*3 
+-->
+<p></p>
+
+
+
+
+
+
+
+<!-- lecture-3 (forms in html ) -->
+<h1>FORMS IN HTML</h1>
+
+<form action="post">
+
+<input type="text" id="name" placeholder="Enter your name">
+
+<input type="submit" value="Submit" > 
+<br>
+<br>
+<button>Submit here</button>
+<br>
+<br>
+<br>
+<!-- label ka for of input ki id same karte taaki dono ko link kar sake -->
+<label for="text">Name:</label>
+<input type="text" id="text" placeholder="Enter your name">
+
+<br>
+<br>
+
+<label for="pass">Password:</label>
+<input type="password" name="pass" id="pass" placeholder="Enter password here">
+
+<br><br>
+<input type="submit" name="Submit" >
+<br><br>
+</form>
+
+
+
+
+
+<form action="post">
+<h2>RADIO BUTTONS</h2>
+
+<input type="radio" name="option" id="buttons">  
+<label for="buttons" name="option"> Male</label>
+
+<!--   for tick only one box give the name attribute same as in input  and label    -->
+
+<input type="radio" name="option" id="but">
+<label for="but" name="option">Female</label>
+<br> <br>
+
+<h2>CHECKBOX</h2>
+LANGUAGE: <input type="checkbox"id="select">
+ <label for="select">Hindi</label>
+
+<input type="checkbox"id="sel">
+<label for="sel" >English</label>
+
+<br>
+<br>
+<label for="date">ENTER DOB:</label>
+<input type="date" name="" id="date">
+   <br>
+
+<!-- 
+input type-> text  
+          -> radio 
+          -> checkbox 
+          -> date 
+          -> password
+          -> file
+ -->
+
+</form>
+
+<br><br>
+
+
+<!--  FORM WITH FIELD SET FOR TYPE OF GROUPING   -->
+
+
+
+<form action="post">
+<caption>field set for grouping of things:</caption>
+    <fieldset>
+
+        <form action="post">
+        <label for="01">NAME:</label>
+        <input type="text" id="01" placeholder="   Enter Your Name"><br><br>
+
+        <label for="02">PASSWORD:</label>
+        <input type="password"  id="02" placeholder="Enter the Password">
+<br>
+<br>
+
+LANGUAGE:<input type="checkbox" id="03">
+<label for="03">Hindi</label>
+
+<input type="checkbox" id="04">
+<label for="04">English</label>
+<br><br>
+<label for="date">ENTER DOB:</label>
+<input type="date" name="" id="date">
+<br>
+<br>
+
+
+<!-- for drop down menu.
+  The <select> tag creates a dropdown list. -->
+<!-- The <label> tag is used to provide a descriptive label for an input field. -->
+<label for="country">COUNRTRY:</label>
+<select name="choosed Counrty" id="country">
+    <option value="" disabled selected>-- Select a Country --</option> 
+    <!-- The disabled attribute makes sure the placeholder can't be selected.     -->
+            <option value="india">India</option>
+            <option value="nepal">Nepal</option>
+            <option value="china">China</option>
+            <option value="america">America</option>
+            <option value="brazil">Brazil</option>
+            <option value="russia">Russia</option>
+</select>
+        <br>
+        <br>
+        <button>SUBMIT</button>
+        <p>
+            value attribute inside option: if a user selects 
+            "India"which is as a label in the option which
+            displays as it is, the value "india"which is 
+            inside the value, will be sent to the server 
+            as the selected country when the form 
+            is submitted.
+        </p>
+        
+        <br>
+        
+        In  HTML select element, the name attribute specifies the key that will be used when sending the selected option's value to the server. When a form with this select is submitted, the selected option value will be sent in a key-value pair, where the name attribute provides the key.
+        
+        For example, if the sele element has name="chooseCountry", and the user selects "India" (assuming the value attribute of "India" is set to "india"), the data sent to the server will look like this:chooseCountry=india
+
+    </fieldset> 
+     <!--CLOSING OF FIELD SET  -->
+    
+    
+    <br>
+    <br>
+    <!--  TEXT AREA GIVES THE SPACE TO WRITE SOMETHING   -->
+    <textarea name="text" id="text" rows="10" cols="30" placeholder="enter text here...">
+
+    </textarea>
+    
+
+    <br> 
+    <br>
+    <!-- 
+     file upload option , type me file daldo or name dedo taaki backend par store ho sake , ek id dedo taaki label ke for se ham inko link kar sake    
+     -->
+    <label for="file1">Uplod:</label>
+    <input type="file" name="choosed file " id="file1">
+    <br><br>
+    <button>upload</button>
+    
+</form>
+
+
+<!-- legend use  dummy form upar wala copy -->
+
+
+
+<br>
+<br>
+
+
+
+
+
+<h2>legend for giving caption in form:</h2>   
+    <!-- fieldset ke andar legend  -->
+    
+    <form action="post">
+        <fieldset>
+            <legend>HTML DUMMY FORM (with legend/form caption)</legend>
+    
+            <label for="01">NAME:</label>
+            <input type="text" id="01"><br><br>
+    
+            <label for="02">PASSWORD:</label>
+            <input type="password"  id="02">
+    <br>
+    <br>
+    
+            LANGUAGE:<input type="checkbox" id="03">
+            <label for="03">Hindi</label>
+    
+            <input type="checkbox" id="04">
+            <label for="04">English</label>
+
+            <br><br>
+
+            <label for="date">ENTER DOB:</label>
+            <input type="date" name="" id="date">
+            <br>
+            <br>
+            
+            <label for="country">COUNRTRY:</label>
+            <select name="choose Counrty" id="country">
+                <option value=""disabled selected>--Select a Country --</option>
+                <option value="india">India</option>
+                <option value="nepal">Nepal</option>
+                <option value="china">China</option>
+                <option value="america">America</option>
+                <option value="brazil">Brazil</option>
+                <option value="russia">Russia</option>
+            </select>
+
+            <br>
+            <br>
+            <button>SUBMIT</button>
+        </fieldset>
+        </form>
+        
+
+
+ </form> <!--  CLOSING OF DUMMY FORM UPAR WALA COPIED  -->
+
+
+
+<br><br>
+
+
+
+<h1>MEDIA TAG:</h1>
+<br>
+<img src="logo.png" alt="logo" height="190">
+<img src="logo1.png" alt="logo">
+<img src="logo2.jpeg" alt="logo" height="180"> 
+<br><br>
+
+<h2>mp3 downloads:</h2>
+<audio src="song.mp3"  controls ></audio>
+<audio src="song1.mp3" controls></audio>
+<br>
+<br>
+<h2>mp4 downloads:</h2>
+<video src="video.mp4"  height="250" controls></video>
+<video src="video.mp4"  height="250" controls></video>
+<video src="video.mp4"  height="250" controls></video>
+<video src="video.mp4"  height="250" controls></video>
+<video src="video.mp4"  height="250" controls></video>
+<video src="video.mp4"  height="250" controls></video>
+
+
+
+<iframe src="https://www.youtube.com/embed/sLykke8q2ls" width="600" height="400" ></iframe>
+
+
+
+
+
+  </body>
+  
+
+</html>
