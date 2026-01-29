@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>FlexBox</title>
+    <style>
+        .container{border:3px solid black;
+            padding: 2px;
+            display: flex;
+            background-color: beige;
+            flex-direction:row;
+           
+        }
+
+        .item{background-color: aqua;border: 2px solid brown; height: 100px;width: 200px;margin: 2px;padding:6px;}
+
+        .container1{border:3px solid black;
+            height: 200px;
+            padding: 2px;
+            display: flex;
+            background-color: beige;
+            flex-direction:row;
+            justify-content: center;
+            
+           
+           
+        }
+
+        .item1{background-color: aqua;border: 2px solid brown; height: 100px;width: 200px;margin: 2px;padding:6px;}
+
+
+    </style>
+</head>
+<body>
+
+
+<h1>FlexBox Brief:</h1> 
+<ol>
+    <li>To create flexbox, mark the container to display:flex</li>
+    <li>By default direction of flexitems is flex-direction:row , isliye jese hi container ko flex mark karenge items aapne aap row wise arrange ho jaynge.</li>
+    <li>If flex-direction:column , item  inside the flexbox arranged in column wise</li>
+</ol>
+<div class="container">
+
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">d</div>
+
+
+</div> 
+
+<h1>flex-directions:</h1>
+    <ol>
+        <li>flex-direction:row;</li>
+        <li>flex-direction:column;</li>
+        <li>flex-direction:row-reversed;</li>
+        <li>flex-direction:column-reversed;</li>
+    </ol>
+
+
+
+<h1>flex-wrap</h1>
+<ol>
+    <li>wrap</li>
+    <li>wrap-reversed</li>
+    <li>no-rap</li>
+</ol>
+
+
+<h1>Justify-content:</h1>
+<ul>
+    <li>    If the flex-direction is set to row which is by default already , the main axis will be =><u>HORIZONTAL Axis</u> 
+    </li>
+    <li>    If the flex-direction is set to column  , the main axis will be =><u>VERICAL Axis</u> 
+    </li>
+
+</ul>
+
+<ol>
+    <li>Justify-content:centre  <b>(elements placed at the centre)</b></li>
+    <li>Justify-content:start</li>
+    <li>Justify-content:end</li>
+    <li>Justify-content:space-between <b> (first and last element in extreme end or baaki ke beech me equal space)</b></li>
+    <li>Justify-content:spcace-around <b>(har element ke left and right me equal space)</b></li>
+    <li>Justify-content:space-evenly  <b>(sabke beech me equal spaces)</b></li>
+
+</ol>
+<br>
+<h2>1.) Content justify at center along the HORIZONTAL axis:</h2>
+<div class="container1">
+
+    <div class="item1">A</div>
+    <div class="item1">B</div>
+    <div class="item1">C</div>
+    <div class="item1">d</div>
+
+
+</div> 
+1.)justify content is work along the main axis 
+align items is work along the cross axis
+ (BY default vertical axis ).
+ if the flex direction is row then the main axis is horizontal and cross axis is vertical.
+ that means justify content jo hoga wo horizontal axis ke along work karega or align items jo hoga wo cross axis ke along karega jo ki vertical axis hogi.
+ or iska vice-versa jab flex-direction column hogi.
+2.)by default the flex items is stretchy .
+
+</body>
+</html>

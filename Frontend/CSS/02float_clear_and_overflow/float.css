@@ -1,0 +1,41 @@
+body{background-color: rgb(255, 255, 255);}
+.line{text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: oblique;}
+
+.float{float: left;width:550px;}
+
+.nonfloat{width:550px;}
+
+.div1{border: 23px solid black;background-color: blanchedalmond;} 
+   
+.div2{border: 23px solid black;background-color: blanchedalmond;}
+
+.div3{border: 23px solid black;background-color: blanchedalmond;}
+
+
+.im1{float: left;width:550px;}
+
+.im2{float: right;width:550px;}
+
+
+.im21{float: right;width: 450px; height: 240px;}
+
+
+.im22{float: right;width: 450px; height: 240px;}
+
+.boxy{border: 4px solid black;  padding:2px   ;}
+.boxy0{border: 4px solid black;  }
+
+#item1{width: 200px;height: 100px; background-color: blue;margin: 2px;}
+#item2{width: 200px; height: 100px; background-color: rgb(0, 255, 8);margin: 2px;}
+#item3{width: 200px; height: 100px; background-color: rgb(255, 0, 0);margin: 2px;}
+#item4{width: 200px;height: 100px; background-color: blue;margin: 2px;margin: 2px;float:left;}
+#item5{width: 200px; height: 100px; background-color: rgb(0, 255, 8);margin: 2px;float:left;}
+#item6{width: 200px; height: 100px; background-color: rgb(255, 0, 0);margin: 2px;float:left;}
+
+.boxyp{position: relative;top: 100px; right: 600px;}
+.dabba{ height: 300px; background-color: aqua;margin: 2px;}
+.gr{border: 23px solid  rgb(0, 0, 0);padding: 2px; }
+
+#clear{float: right;width: 450px; height: 240px;}
+#clear1{float: right;width: 450px; height: 240px;clear: right;} 
+/* confusion- why clear left not work for the blue img */
