@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        .container{background-color: burlywood; border: 3px solid black; margin:2px;
+        display: flex; width: 600px;
+        margin:2px;
+        }
+        #boxleft{width: 17%; background-color: chartreuse;height: 200px;width:300px; border: 2px solid blue; margin: 4px;}
+        #boxright{width: 37%;background-color: aqua;}
+        p{border:2px solid red;}
+        img{width: 200px;height: 200px;padding:5px  ;}
+        @media(max-width:600px){.container{flex-direction: column;}}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>TEXT1</p>
+            <p>TEXT2</p>
+        </div>
+        <div id="boxright">
+            <img src="im22.png" alt="">
+
+        </div>
+        
+    </div>
+</body>
+</html>

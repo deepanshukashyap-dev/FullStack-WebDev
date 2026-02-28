@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Flex-with-display</title>
+    <style>
+       .box{background-color: chartreuse; border: 3px solid black;width:200px;height: 200px; 
+       margin: 1px;}
+       .container{display: flex; border:2px solid black; height: 800px;
+        background-color: bisque;
+       }
+       @media(max-width:600px){.container{flex-direction: column;}}
+      
+
+    </style>
+</head>
+<body>
+    <h1>600px se kam par column wise arrange ho jaynge , pehle flex-direction row thi bydefault then column hogyi flex-direction column se</h1>
+    <div class="container">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+    </div>
+</body>
+</html>
