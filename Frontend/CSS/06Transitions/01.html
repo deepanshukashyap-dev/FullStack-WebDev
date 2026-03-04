@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <title>BOx shadow</title>
+    
+        <style>
+            body,html{ width: 100%;
+                height: 100%;}
+            .display{background-color:  rgb(180, 221, 228);
+                border: 2px solid black;
+                width: 100%;
+                height: 100%;
+                margin:0;padding:0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .container{
+                background-color: rgb(255, 255, 255);
+                width:30%;
+                height:70%;
+                display: flex;
+                flex-direction:column;
+                border: 2px solid black;
+                padding: 5px;
+               }
+            input{width:40%;}
+    
+    
+        /*Box-Shadow & Text-Shadow*/
+            h1{text-shadow:3px 2px 3px wheat;}
+            .container{box-shadow:3px 2px 8px 10px rgb(128, 0, 219) ; border-radius: 3px;}
+
+            button{background-color: rgb(0, 255, 21);
+                 border: 2px solid black;
+                  border-radius:14px;
+                  width:100px;
+                  color: aliceblue;
+            font-weight: 200 ;
+            font-size: larger; 
+            position: relative;
+            left:200px; 
+            transition-duration: 1ms;
+            transition-timing-function:linear;
+            }
+
+            button:hover{
+                background-color: rgb(29, 138, 29);
+                box-shadow: 5px 2px 1px  green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="display">
+    
+            <div class="container">
+        
+                
+                    
+                <div class="n">
+
+                    <h1>Login Page</h1>
+                </div>    
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass"> <br> 
+                    
+                    <button>Submit</button>
+                    
+                
+        
+            </div>
+    </body>
+</html>
