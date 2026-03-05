@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    width:100vw;
+    background-color: aliceblue;
+    padding:1.5rem;
+    display: grid;
+    gap:1rem;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns:repeat(3,1fr);
+    
+}
+.item{
+    background-color: cyan;
+    border:2px solid black;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>second work</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 100vw;
+            height:100vh;
+            background-color: rgb(61, 61, 61);
+            padding:2rem;
+            display:grid;
+            gap:1rem;
+            grid-template-rows:repeat(2,1fr);
+            grid-template-columns:repeat(3,1fr);
+        
+
+        }
+        .item{
+            background-color:rgb(68, 5, 127);
+            border:4px solid black;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            color: wheat;
+            
+            
+        }
+        .first{
+            grid-column-start:1;
+            grid-column-end:3;
+        }
+        
+        
+        .second{
+            grid-row-start: 1; /* Start from the first row */
+            grid-row-end: 3;   /* End at the third row */
+            /*important*/
+            grid-column-start: 3; /* Stay in the third column */
+            
+        }
+    
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item first">1</div>
+        <div class="item second">2</div>
+        <div class="item third">3</div>
+        <div class="item four">4</div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+
+
+
+ /* for row and column size we use the fr(fractional unit)-> if 1fr given to all row,to sab parent conatiner ki max width ke according arrange hojaynge ,jab rows/collumn ke liye repeat ho rha hoga grid size to repeat()keyword use hoga*/
+.container{
+    width:100vw;
+    height:100vh;
+    background-color: rgba(56, 56, 56, 0.767);
+    display: grid;
+    padding:4rem;
+    row-gap:1rem;
+    column-gap:1rem;
+
+    
+    /* grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;  (same as below one) */
+
+    /*(ek ke niche ek)*/
+     grid-template-rows: repeat(6,1fr);  /*(for rows-count and grid size)*/
+
+
+
+    /* these above and  (row,columns) property is for min width 550px only*/
+
+
+
+    /* grid-template-columns: 1fr ;  (same as below one) */
+
+    grid-template-columns: repeat(1,1fr);  /*(for columns-count and grid size)*/
+    
+    
+
+}
+.item{
+    background-color: indigo;
+    border:6px solid black;
+    color: wheat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    }
+
+
+
+
+@media (min-width:580px)
+{
+
+    .container{
+        grid-template-rows:repeat(4,1fr) ; 
+        grid-template-columns:repeat(3,1fr); 
+    }
+    
+    .header,.footer{
+        grid-column-start:1;
+        grid-column-end:4;
+    }
+    
+    .slidebar{
+        grid-row-start:2;
+        grid-row-end:4;
+    }
+    
+    .content1{
+        grid-column-start:2 ;
+        grid-column-end:4;
+    }
+
+}
