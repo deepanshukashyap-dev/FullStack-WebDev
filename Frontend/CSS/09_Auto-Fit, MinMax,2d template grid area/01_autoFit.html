@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>AutoFit Minmax</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width:100vw;
+            height: 100vh;
+
+            background-color: rgb(85, 83, 83);
+            display: grid;
+            padding:5rem;
+            grid-template-columns:repeat(auto-fit,Minmax(200px,300px));
+            gap:1rem;
+            
+        }
+        .item{
+            background-color: aqua;
+            border:2px solid black;
+            padding: 2rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        
+    </div>
+    
+</body>
+</html>
