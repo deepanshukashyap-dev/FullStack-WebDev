@@ -1,0 +1,112 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+
+
+body{background-color: lightgray;}
+
+.container{
+    width:100vw;
+    height:100vh;
+    
+    
+}
+.navcontainer{
+    width:100vw;
+    display:flex;
+    flex-direction: row;
+    background-color: red;
+    height:50px;
+    justify-content:center;
+    align-items: center;
+
+}
+.navlist{
+    list-style: none;
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    align-items: center;
+    margin-left:15px;
+    margin-right:15px;
+
+    
+    
+}
+
+.heading{font-size:45px; color: aliceblue;font-family:fantasy;margin-left: 80px;}
+a{font-size:45px;float: left;margin:24px; color: aliceblue;}
+nav{display: flex;justify-content: space-evenly;width:100%;}
+
+.footer{background-color: red;}
+.webcontent{
+    margin: auto;
+     padding:10px;
+    width:60%;
+    height:100vw;
+     background-color: rgb(255, 255, 255); 
+    
+    border-radius:35px;
+    box-shadow: 0px 0px 43px 9px black;
+    display: flex;
+    flex-direction: column;
+}
+.leftcontent{margin: 30px;}
+.recipe{margin: 10px;}
+
+.jamun{
+    height: 380px;width:250px;border-radius:10%;
+    transition-duration: 0.1s;
+    transition-timing-function:linear;
+}
+.jamun:hover{transform:scale(1.1);}
+
+.con{display: flex; flex-direction: row; justify-content: space-between;}
+h1{font-size: 40px;font-family: sans-serif;}
+li{font-weight: 100;font-size: 19px;}
+h2{color: rgba(11, 11, 11, 0.808);}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightcontent{
+    margin:16px;
+    position: relative;
+}
+img{display: block;
+    height: 380px;width:250px;border-radius:10%;
+    transition-duration: 0.1s;
+    transition-timing-function:linear;
+}
+
+
+
+/*
+    Always keep in mind-
+*/
+.buy{
+
+    /* imp for overlappinig */
+    width:100%;
+    height: 100%;
+    top: 0%;
+    left:0%;
+    position: absolute;
+    background:rgba(0,0,0,0.6);
+    
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* for transition */
+    opacity:0;
+    transition-duration: 0.2s;
+    transition-timing-function:linear;}
+.buy:hover{opacity:1;}
+
+
+.rightcontent h2{
+    font-size:26px;
+    color:#fffdf2;
+}
