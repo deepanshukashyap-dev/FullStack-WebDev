@@ -1,0 +1,68 @@
+/* always best practice */
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* imp for all */
+.container{
+
+    width:100%;
+    min-height:100vh;
+
+    background: url(image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+/*
+ nav ko flex - jisme h1 or ul flex items hai , align items centre kiya jissse vertically cantre hogye or justify content space btw kardiya taaki extreme ends par chale jaaye fir padding dedi 0px 100px(remember for navigation bar) for tranparency
+  remember(0,0,0,0.3/0.6)
+  */
+nav{
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color:rgba(0,0,0,0.3);
+    padding:0px 100px;
+
+}
+
+
+nav h1{
+    font-size:40px;
+    color:#fff;
+}
+
+
+
+nav ul li{
+    margin: 5px;
+    list-style:none;
+    display: inline-block;
+
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size:18px;
+    padding:10px;
+
+    border-radius:5px;
+    transition-duration:0.3s;
+    transition-timing-function: linear;
+}
+
+nav ul li a:hover{
+    background-color:rgba(119, 137, 149, 0.4);
+}
