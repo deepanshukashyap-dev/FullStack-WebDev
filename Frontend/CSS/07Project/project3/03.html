@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            background-color: rgb(31, 87, 139);
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        
+        }
+        .card{
+            background-color: aliceblue;
+            width:54%;
+            height:55%;
+            display:flex;
+            flex-direction: row;
+            margin:20px;
+            
+        }
+        .right{width:50%; height: 100%;background-color: blueviolet;}
+        .left{width:50%; 
+            height: 100%;
+            background-color: rgb(79, 8, 79);
+            padding-top: 50px;
+            padding-left: 30px;
+            display:flex;
+            flex-direction: column;
+            gap:40px;
+            
+        }
+        .left h1{color: aliceblue; font-size: 36px;}
+        .left  p{color: aliceblue; }
+        
+
+
+        .right img{
+                height: 100%;
+                width: 100%;
+            }
+
+    .stats{display: flex;
+    flex-direction: row;
+justify-content: space-between;}
+.stats h2{color: white;
+margin-left: 10px;
+margin-right: 20px;
+}
+.dd{
+    display: flex;
+    flex-direction: column;
+}
+
+.stats .ddd p{text-align: center;}
+
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="overlay">
+
+            
+            
+            <div class="card">
+                <div class="left">
+                    <h1>Get insights that help the business grow</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis debitis quas officia ad quasi quidem quos explicabo sequi consectetur! Lorem ipsum dolor sit amet consectetur </p>
+                    <div class="stats">
+                        <div class="dd">
+                            <h2>10k+</h2>
+                            <p>comments</p>
+                        </div>
+                        <div><h2>214</h2>
+                            <p>Paid Users</p>
+                        </div>
+                        <div  class="ddd"><h2>12M+</h2>
+                            <p>Views</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="icon.jpg" alt="img">
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
