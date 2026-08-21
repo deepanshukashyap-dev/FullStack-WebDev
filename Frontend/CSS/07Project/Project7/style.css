@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 20px;
+    
+  }
+  
+  .navbar {
+    height:3.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(15,15,15,0.8), rgba(50,50,50,0.6));
+    padding: 10px 20px;
+    border-radius: .5rem;
+    color: white;
+    margin: 20px auto;
+    max-width: 90%;
+    
+
+  }
+
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 2.55rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar .nav-links li {
+    font-size: 16px;
+  }
+  
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: white;
+    
+  }
+  
+  .navbar .register-btn {
+    background-color: #ff0077;
+    color: white;
+    font-size: .2rem;
+    padding: 10px 20px;
+    font-size: smaller;
+    border: none;
+    border-radius: .325rem;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100px;
+
+  }
+  
+  .navbar .register-btn:hover {
+    background-color: #ff4090;
+    height: 1.7rem;
+    
+  }
