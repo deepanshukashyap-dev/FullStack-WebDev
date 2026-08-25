@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+    
+        .container{
+            width:100vw;
+            height: 100vh;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            background-color: rgba(145, 223, 197, 0.733);
+        }
+      .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:350px;
+            height:570px;
+            border-radius:20px;
+            gap:20px;
+              
+            background-color: white;
+
+        }
+
+
+        img{
+            width:350px;
+            height:180px;
+            border-top-left-radius:20px ;
+            border-top-right-radius:20px ;
+        }
+        .para{
+            width:300px;
+            text-align: center;
+        }
+        .money{
+            height:45px;
+            background-color:rgba(52, 224, 224, 0.327);
+            width:260px;
+            border-radius:8px;
+        }
+
+        .paybutton{
+            height:45px;
+            width: 260px;
+            background-color: rgb(10, 10, 55);
+            color: white;
+            border-radius:6px;
+
+           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            
+            font-size:15px;
+            transition-timing-function:ease;
+            transition-duration:0.2s;
+        }
+        button:hover{background-color:rgb(14, 14, 105);
+        border-radius:10px;
+        font-size:14px;
+        }
+        .cancel a{
+            text-decoration: none;
+            color: rgb(20, 20, 84);
+            transition-duration: 0.1s;
+            transition-timing-function: linear;
+        }
+        .cancel a:hover{color: blue;
+        font-size:17px;}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div >
+                <img src="icon.jpg" alt="img">
+            </div>
+            <div>
+                <h2>Order Summary</h2>
+            </div>
+
+            <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia deserunt ducimus optio perspiciatis ipsam quasi velit facere repellat excepturi.</p>
+            </div>
+            <div class="money">
+
+            </div>
+            <div>
+                <button class="paybutton">Proceed To Payment</button>
+            </div>
+            <div class="cancel">
+                <a href="#">Cancel Order</a>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
