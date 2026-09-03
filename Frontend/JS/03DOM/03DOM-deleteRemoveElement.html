@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Delete | Edit</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+    <ul class="lang">
+        <li>javaScript</li>
+        <li>java</li>
+    </ul>
+    
+</body>
+<script>
+
+// ===================================== Normal Approach ========================================================================
+
+    // function addLang(langName){
+    //     const li = document.createElement('li');
+    //     const text = document.createTextNode(langName);   //creating text node
+
+    //     li.appendChild(text);
+
+    //     const ul = document.querySelector('.lang');
+
+    //     ul.appendChild(li) //pehle selector use karke ul ko select karege by class , before appending make sure it exists
+    // }
+    // addLang('django')
+    // addLang('react')
+
+
+// ===========================// (agar <ul> nahi hai, to create + use):  dont use inner HTML ==================================
+//   function addLang(langName){
+//     let ul = document.querySelector('.lang');   //selecting ul by query selector
+//     if(!ul){                                    //if empty
+//       ul = document.createElement('ul');   //create ul first
+//       document.body.appendChild(ul);       //then append ul in document body
+//     }
+//     const li = document.createElement('li');  //create li
+//     li.innerHTML = langName;   //second method to adding text in ul>li  rather than making text node and appending
+
+//     ul.appendChild(li);
+//   }
+//   addLang('django');
+
+
+
+// // ===========================Add Optimal Approach =============================================================
+function addLang(langName){
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName));  //inserting text node
+    document.querySelector('.lang').appendChild(li) //in single line
+}
+    addLang('django')
+    addLang('react')
+
+
+// ======================== Edit Element ==========================================================================
+console.log(document.querySelector('li:nth-child(2)'))
+
+const secondLang = document.querySelector('li:nth-child(2)')  //select 2nd li 
+const newLi = document.createElement('li')                    //create new li
+newLi.textContent = "pawa"                                    // replace old with new
+secondLang.replaceWith(newLi)
+
+
+
+// ======================== remove Element ==========================================================================
+const second = document.querySelector('li:nth-child(2)')
+second.remove()
+
+</script>
+</html>
