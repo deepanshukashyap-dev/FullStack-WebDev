@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .flex{
+            display: flex;
+            flex-direction: row;
+            margin: 2rem;
+            gap: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="head block">DOM Manipulation</h1>
+    <p class="block">This is a simple example of DOM manipulation using JavaScript.</p>
+    <div class="block">
+        <p class="block" onclick="handleButtonClick()">
+            hey! my name is <span id="name-block">Deepanshu</span>
+        </p>
+    </div>
+    <button id="action">Click Me</button>
+
+    <br><br><br>
+
+    
+    
+
+    <div class="flex">
+        <div class="left">
+            <button id="add-btn">add-item</button>
+            
+            <div id="container">
+
+            </div>
+        </div>
+
+        <div class="right">
+            <button id="add-btn1">add-item</button>
+            
+            <div id="container1">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<Script>
+
+    const heading = document.querySelector(".head");
+    console.log(heading.innerText="kk");
+
+    // const ele = document.getElementsByClassName("block");
+    // console.log(ele)
+    // for(let i=0;i<ele.length;i++){
+    //     ele.item(i).remove();
+    // }
+
+    // 1st way 
+    // function handleButtonClick(){
+    //     console.log("c");
+    //     alert("you clicked the button");
+    // }
+
+    const button = document.getElementById("action");
+    // 2nd way , method override problem
+    button.onclick = ()=>{
+        console.log("button is clicked by onclick")
+    }
+
+
+    const nameBlock = document.getElementById("name-block");
+    // 3rd way , preferred way
+    button.addEventListener('click',()=>{
+        console.log("i am clicked");
+    })
+    
+    button.addEventListener('click',()=>{
+        if(nameBlock.style.color==='red'){
+            nameBlock.style.color='blue';
+        }
+        else nameBlock.style.color='red';
+    })
+
+
+    //to remove
+    // const allChildren = document.querySelector('body').children;
+    // for(let i=0;i<allChildren.length;i++){
+    //     allChildren.item(i).addEventListener('click',()=> allChildren.item(i).remove() );
+    // }
+
+    const addItem = document.getElementById('add-btn');
+    const container = document.getElementById('container');
+
+    let count = 0;
+    addItem.addEventListener('click', ()=>{
+        const ele = document.createElement('h1');
+        const ele1 = document.createElement('h1');
+        ele.innerText = "Senior";
+        ele1.innerText = "kittu";
+        
+        if(count<=3){
+            container.appendChild(ele);
+            count++;
+        }
+        else container.appendChild(ele1);
+        
+    })
+
+    let count1 = 1;
+    const addItem1 = document.getElementById('add-btn1');
+    const container1 = document.getElementById('container1') ;
+    addItem1.addEventListener('click',()=>{
+        const ele = document.createElement('li');
+        ele.innerText = count1;
+        container1.appendChild(ele);
+        count1++;
+    })
+
+</Script>
+</html> 

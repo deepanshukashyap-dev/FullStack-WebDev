@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121;">
+    
+</body>
+<script>
+    // in short: 
+    // 1. Pehle create karege by "createElement" se
+    // 2. Class , id wagera de dege
+    // 3. Styles set kardege
+    // 4. Text node banayge by "createTextNode"
+    // 5. usko append kardege jo bhi element bnaya hai 
+    // 6. fir whole element ko document ki body me append kardege
+
+
+
+    const div = document.createElement('div')
+    console.log(div)
+    
+    div.className="main"
+    div.id = Math.round(Math.random()*10+1)
+    div.style.backgroundColor='red'
+    div.style.padding='10px'
+    div.style.color='#212121'
+
+    // div.innerHTML='Chut ka bhukha'  //bad way to add text 
+
+    //create node to add the text by createTextNode
+    const newText = document.createTextNode("Chut ka bhukha")
+    div.appendChild(newText); //div me text node append kar diya
+
+    document.body.appendChild(div)  //document ki body me div ko append kardiya
+</script>
+</html>
