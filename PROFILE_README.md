@@ -18,18 +18,13 @@
 
 ## 🚀 About Me
 
-```javascript
-const deepanshu = {
-    code: ["JavaScript", "TypeScript", "Python", "Java", "C"],
-    focus: ["Full-Stack Architecture", "Scalable APIs", "Cloud Infrastructure"],
-    frontend: ["React", "Tailwind CSS", "GSAP", "Three.js"],
-    backend: ["Node.js", "Express.js", "REST APIs", "Socket.IO"],
-    databases: ["MongoDB", "PostgreSQL", "MySQL"],
-    cloudDevOps: ["AWS", "Docker", "Terraform", "Nginx"],
-    currentGoal: "Building robust, high-performance web systems and AI applications",
-    reachMeAt: "medeepanshukashyap@gmail.com"
-};
-```
+I am a passionate **Full-Stack Software Engineer** dedicated to building scalable web applications, robust backend architectures, and modern digital experiences. With a strong foundation across core computer science, systems programming, and modern frameworks, I focus on crafting clean, maintainable, and high-performance solutions.
+
+- 🔭 **Focus Areas:** Scalable Web Applications, Distributed Backend Systems & Modern Cloud Infrastructure.
+- 💡 **Engineering Philosophy:** Writing clean, modular, and maintainable code with a strong emphasis on performance and user experience.
+- 🌐 **Systems & Networks:** Deep interest in networking protocols, containerization with Docker, and cloud deployments.
+- 🎯 **Current Goal:** Developing high-impact full-stack software and integrating modern AI capabilities into real-world applications.
+- 💬 **Ask Me About:** JavaScript/TypeScript, React, Node.js, Express, Database Design, and Cloud Architecture.
 
 ---
 
@@ -148,6 +143,3 @@ const deepanshu = {
 
 <br />
 
-<div align="center">
-  <sub>Designed with ❤️ by Deepanshu Kashyap • Continuous Learning & Engineering Excellence</sub>
-</div>
