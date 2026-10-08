@@ -1,0 +1,15 @@
+GFG , W3 School
+
+Why is Context API used?
+Context API solves the problem of prop drilling in React. Prop Drilling occurs when data is to be passed between multiple layers before finally sending it to the required component. This makes the application slower. This problem is solved by Context API as it creates global variables to be used throughout the application without any middle components involved. It is also easier to use than React Redux
+
+Working
+To work with Context API we need React.createContext()
+
+
+
+prompt:"value={username}Tells the Input box: "Always show exactly what is in the State."
+
+res:ye to wese bhi input box normally bhi kardeta hai"
+// React can say: "I see you typed 'A', but I'm only saving 'a' in the state."
+onChange={(e) => setUsername(e.target.value.toLowerCase())}
