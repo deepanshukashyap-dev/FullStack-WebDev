@@ -1,0 +1,21 @@
+What is Synchronous JavaScript?
+In synchronous programming, operations are performed one after the other, in sequence. So, basically each line of code waits for the previous one to finish before proceeding to the next. This means that the program executes in a predictable, linear order, with each task being completed before the next one starts.
+
+console.log("Hi");
+console.log("Geek");
+console.log("How are you?");
+
+Output:
+Hi
+Geek
+How are you?
+
+we can see the codes work in a sequence. Every line of code waits for its previous one to get executed first and then it gets executed.
+--------------------------------------------------------------------------------------------
+
+#Synchronous JavaScript can lead to blocking of the main thread,
+which might create problem in production applications. For example, if we have a function that takes a long time to execute, it will block the entire program until it finishes. This can lead to poor performance and a bad user experience.
+
+for example, if we have a function that fetches data from an API, it might take a few seconds to get the response.During that time, the entire program will be blocked and unresponsive to user interactions.
+
+for example, db connections, file handling, network requests, etc. These operations can take a significant amount of time to complete, and if they are executed synchronously, they can block the entire program and make it unresponsive.

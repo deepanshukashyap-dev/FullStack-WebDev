@@ -1,0 +1,10 @@
+we can send the token via cookie,res.json({ token }); and header builtin
+authorization:"Bearer ${token}" jiske ki ek string pass karni hoti hai jo ki bearer se start hoti hai or token lete hai jo ki genreate kiya gaya hai jwt.sign() se
+is token ke andar user ka id hota hai jisse hum identify kar sakte hai ki konsa user request kar raha hai or mene apne acc email bhi dal diya hai  and syntax hota hai jwt.sign(payload,secretKey,{options}) , here options me hum expiry time de sakte hai jisse ki token expire ho jaye ek certain time ke baad ,
+payload me hum user ka id dalte hai jisse ki hum identify kar sake ki konsa user request kar raha hai jo ki object hota hai must ex-{_id:user._id} , secretKey me hum ek secret key dalte hai jisse ki hum token ko sign kar sake or ye key humesha private hoti hai or kisi ko nahi batani chahiye
+or jab bhi user koi protected route access karta hai to hum is token ko verify karte hai jwt.verify(token,secretKey) se jisse ki hum pata kar sake ki token valid hai ya nahi or token me jo payload tha wo kya tha
+is tarah se hum authentication or authorization dono kar sakte hai jwt ke through.
+
+
+
+server kya karega ki authorization me se bearer hata dega or jo token bacha hai usse verify karega jwt.verify() se or agar token valid hai to user ko access de dega protected route ka otherwise error dega ki unauthorized access hai.

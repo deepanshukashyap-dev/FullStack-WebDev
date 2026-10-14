@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .upload-container {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            width: 350px;
+            text-align: center;
+        }
+
+        .upload-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .file-input {
+            margin: 15px 0;
+            width: 100%;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .submit-btn {
+            margin-top: 15px;
+            background-color: #1976d2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="upload-container">
+        <h2>Upload Your File</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="file-input">
+                <input type="file" name="profileImage" required>
+            </div>
+            <button type="submit" class="submit-btn">Upload</button>
+        </form>
+    </div>
+
+</body>
+</html>

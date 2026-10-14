@@ -1,0 +1,30 @@
+Headers are used in HTTP requests and responses to convey additional information about the request or response. They consist of key-value pairs that provide metadata such as content type, content length, server information, caching policies, and more.
+
+Some common HTTP headers include:
+- Content-Type: Indicates the media type of the resource (e.g., application/json, text/html).
+- Authorization: Contains credentials for authenticating the client with the server.
+- User-Agent: Identifies the client software making the request (e.g., browser type).
+- Accept: Specifies the media types that the client is willing to receive from the server.
+
+Some built-in headers in Express.js:
+- Content-Type: Automatically set by Express based on the response data type.  
+- Content-Length: Indicates the size of the response body in bytes.
+- Set-Cookie: Used to send cookies from the server to the client.
+- Cache-Control: Directives for caching mechanisms in both requests and responses.
+
+Custom headers can also be created and used to pass specific information between the client and server as needed
+best practices for using headers:
+- Use standard headers whenever possible to ensure compatibility.
+- Keep custom headers concise and meaningful Add X- prefix to custom headers (e.g., X-Custom-Header).
+
+
+Request Headers Example: GET /api/users HTTP/1.1
+Host: example.com 
+User-Agent: PostmanRuntime/7.28.4
+Accept: */*
+
+Response Headers Example:HTTP/1.1 200 OK
+Content-Type: application/json  
+Content-Length: 123
+X-Custom-Header: value
+Date: Mon, 25 Sep 2023 12:00:00 GMT

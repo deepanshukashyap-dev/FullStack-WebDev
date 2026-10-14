@@ -1,0 +1,68 @@
+MongoDB 
+- NoSQL database
+- Document-oriented
+- Uses BSON (Binary JSON) format for data storage
+- Schema-less design
+- Supports horizontal scaling through sharding
+- High availability with replica sets
+
+Diffrences between SQL and NoSQL database 
+1. Data Model:
+   - SQL: Relational model with tables, rows, and columns
+   - NoSQL: Various models including document, key-value, column-family, and graph 
+
+2. Schema:
+   - SQL: Fixed schema, requires predefined structure
+    - NoSQL: Dynamic schema, allows for flexible and evolving data structures
+
+3. Scalability:
+    - SQL: Vertical scaling (adding more power to existing machines)
+    - NoSQL: Horizontal scaling (adding more machines to the database cluster)  
+
+
+To conclude :- SQL databases are suitable for complex queries and transactions, while NoSQL databases are ideal for handling large volumes of unstructured or semi-structured data with high scalability and flexibility.
+
+for example where to use SQL and NoSQL databases
+- SQL: Banking systems, E-commerce platforms, Enterprise resource planning (ERP) systems, Customer relationship management (CRM) systems, Healthcare management systems
+- NoSQL: Social media applications, Real-time analytics, Content management systems, Internet of Things (IoT) applications, Gaming applications
+
+in gaming applications, NoSQL databases can be used to store player profiles, game state data, leaderboards, and real-time multiplayer interactions due to their ability to handle large volumes of unstructured data and provide low-latency access.
+
+for a betting applications which database is better SQL or NoSQL?
+For a betting application, a SQL database is generally better suited due to the need for complex transactions, data integrity, and consistency. Betting applications require accurate record-keeping of bets, user accounts, and transaction histories, which are best managed with the relational model and ACID (Atomicity, Consistency, Isolation, Durability) properties provided by SQL databases. However, NoSQL databases can be used in conjunction for handling large volumes of unstructured data such as user activity logs or real-time analytics.
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+VISUAL FLOW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+When server starts
+Code file load hoti hai
+        ↓
+Express app create hota hai
+        ↓
+Middleware REGISTER hote hain
+(app.use)
+        ↓
+Schema define hota hai
+        ↓
+Model create hota hai
+        ↓
+Routes define hote hain
+(app.get / post)
+        ↓
+MongoDB CONNECT (await)
+        ↓
+Server START (app.listen)
+        ↓
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Ab server REQUESTS accept karta hai
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        ↓
+Request aati hai
+        ↓
+Middleware EXECUTE hota hai (order wise)
+        ↓
+Matching Route execute hota hai
+        ↓
+Response client ko jaata hai

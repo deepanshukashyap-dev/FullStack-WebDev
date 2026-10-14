@@ -1,0 +1,3 @@
+[ HTML ]  → UI (input, button, result)
+[ JS ]    → fetch(), DOM update
+[ API ]   → res.json() (Gemini response)

@@ -1,0 +1,5 @@
+//view engine setup (EJS) to render dynamic HTML pages and send to user, we can use other view engines also like pug,hbs etc..
+app.set("view engine", "ejs");
+app.set("views", path.resolve("./views")); //setting views directory for ejs files,
+//1st views is the name of the folder where ejs files are stored
+//2nd ./views is the relative path of the views folder from the current working directory

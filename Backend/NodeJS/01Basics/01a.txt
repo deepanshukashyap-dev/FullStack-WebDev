@@ -1,0 +1,31 @@
+LEC-01
+RYAN Dahl is dev of nodejs
+
+why node js?
+
+nodejs = V8 engine + C++
+
+thts why you ran js outside the browser
+js can talk to native machine bacause of c++
+you can do file handling
+we can create webserver
+we can import the inbuilt packages(http, fs, crypto)
+
+nodejs is a runtime env for js in which we can execute js
+
+js cannot interact with our computer on the other hand nodejs gives the power to js so that it can execute beyond the browser and in terminal also
+
+
+LEC02
+run the nodejs code with node file_name
+and create package.json by npm init 
+package.json is the configuration file in which we can define our scripts and install dependencies
+
+
+
+LEC03(Modules)
+in production there are lots of modules , so we split the code in different files so that all the related functions grouped and can be called on demand to write clear and modular code.
+importing maths.js file and storing in variable by storing the imported "file" in a variable we can access its exported "functions"
+
+When you require/import a module in Node.js, the module.exports object is returned.
+If the module exports a single function directly (like in maths.js), you can call it directly without storing it in a variable. However, if the module exports multiple members (like functions, objects, etc.), you would typically store it in a variable to access those members

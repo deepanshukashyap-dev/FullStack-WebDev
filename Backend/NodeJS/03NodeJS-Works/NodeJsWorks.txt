@@ -1,0 +1,20 @@
+blocking = operations that block the execution of other operations until they are completed. (synchronous)
+non-blocking = operations that do not block the execution of other operations and allow the event loop to continue processing other requests. (asynchronous)
+
+How NodeJS works:-
+1. NodeJS is built on Chrome's V8 JavaScript engine which makes it fast.
+2. NodeJS uses an event-driven, non-blocking I/O model which makes it lightweight and efficient.
+3. NodeJS operates on a single-threaded event loop architecture which allows it to handle multiple concurrent connections without creating multiple threads.
+
+
+#firstly, when a request is made to the NodeJS server, it is added to the event queue.
+then, the event loop picks up the request from the queue and processes it.
+event queue check the operation is blocking or non-blocking.
+
+>if the operation is non-blocking, the event loop delegates the operation to the system kernel or a thread pool.
+once the operation is completed, the callback function associated with the operation is added to the event queue
+
+>if the operation is blocking the event loop waits for the operation to complete before moving on to the next request. 
+once the operation is completed, the event loop picks up the callback function from the event queue and executes it.
+
+

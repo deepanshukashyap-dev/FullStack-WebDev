@@ -1,0 +1,56 @@
+//1.here u use 'req.method' to get the method used in the request(GET, POST, DELETE, PUT, PATCH etc)
+//2. for each route you can handle different methods accordingly using 'req.method'.
+// if(req.methode===GET){res.end("HomePAge")}  else if(req.method===POST){...} etc
+//3. for /signUp page route you can handle POST method to get the data from the user and save it to database/file
+// case "/signUp":
+//  if(req.method==='GET') res.end("SignUp Page") 
+//  else if(req.method==='POST'){
+    //DB query to save the data
+    console.log("Data received from user for SignUp");
+    //res.end("SignUp Successful");
+}
+//4. handle the diffrent routes by switch case and for methods in particular route
+//   like in signUp page use if else to hand different req methods
+
+//5. this complexity of switch cases for big projects will handle by express framework
+// which make all this structural thing easy to deal with different routes
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Creating server
+const myServer = http.createServer((req,res) => {
+    //req: for client side all data , res: for to send the response to the server
+    console.log("New Request received! "); //ignore
+    const log = `${Date.now()}: ${req.method} ${req.url} New Req is received\n`; //Changes is"${req.method}"
+    const myUrl = url.parse(req.url,true); //converting URL string into url obj , true karne se query bhi mil jata hai
+    console.log(myUrl); //ignore
+
+    fs.appendFile("log.txt", log, (err)=>{
+        if(err){
+            console.log("Error!: ",err);
+        }else{
+            console.log("log is successfully append to file log.txt(Asynchronously)");
+            switch(myUrl.pathname){
+                case '/': 
+                    res.end("Home Page: Response from the server");
+                    break;
+                case '/about': 
+                    res.end("About Page");
+                    break;
+                default:
+                    res.end("404");
+
+            }
+        }
+    })
+});
